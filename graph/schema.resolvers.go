@@ -11,11 +11,27 @@ import (
 	"github.com/fabioods/fullcyle-graphql/graph/model"
 )
 
-func (r *mutationResolver) CreateTodo(ctx context.Context, input model.NewTodo) (*model.Todo, error) {
+func (r *mutationResolver) CreateCategory(ctx context.Context, input *model.Newcategory) (*model.Category, error) {
 	panic(fmt.Errorf("not implemented"))
 }
 
-func (r *queryResolver) Todos(ctx context.Context) ([]*model.Todo, error) {
+func (r *mutationResolver) CreateCourse(ctx context.Context, input *model.NewCourse) (*model.Course, error) {
+	panic(fmt.Errorf("not implemented"))
+}
+
+func (r *mutationResolver) CreateChapter(ctx context.Context, input *model.NewChapter) (*model.Chapter, error) {
+	panic(fmt.Errorf("not implemented"))
+}
+
+func (r *queryResolver) Categories(ctx context.Context) ([]*model.Category, error) {
+	panic(fmt.Errorf("not implemented"))
+}
+
+func (r *queryResolver) Courses(ctx context.Context) ([]*model.Course, error) {
+	panic(fmt.Errorf("not implemented"))
+}
+
+func (r *queryResolver) Chapters(ctx context.Context) ([]*model.Chapter, error) {
 	panic(fmt.Errorf("not implemented"))
 }
 
